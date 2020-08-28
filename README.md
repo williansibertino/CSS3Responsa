@@ -1,2 +1,3 @@
-# CSS3Responsa
- Framework básico de CSS3 grid layuot responsivo.
+# CSS3Responsa framework
+
+**Framework básico de CSS3 grid layout responsivo.**
