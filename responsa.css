@@ -1,7 +1,5 @@
-body {background-color: #5cdbc6}
-
-/* propriedade definida como border-box. Isso garante que o preenchimento e a borda sejam incluídos na largura e altura total dos elementos. */
 * {
+    /* Propriedade definida como border-box. Isso garante que o preenchimento e a borda sejam incluídos na largura e altura total dos elementos. */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,47 +7,86 @@ body {background-color: #5cdbc6}
     -webkit-box-sizing: border-box;
 }
 
+
+
+[class*="col-"] {
+    /* For Devices 320px */
+    width: 100%;
+    float: left;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    background-color: #fafafa;
+}
+
 .row::after {
+    /* Limpeza de fluxo em que os elementos não serão colocados como se as colunas não existissem */
     content: "";
     clear: both;
     display: table;
 }
 
-[class*="col-"] {
-    width: 100%;
-    float: left;
-    padding: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.5)
-}
-
 @media only screen and (min-width: 480px) {
-    /* For Tablets */
-    .col-s-1{width:  8.33%;}
-    .col-s-2{width: 16.66%;}
-    .col-s-3{width: 25.00%;}
-    .col-s-4{width: 33.33%;}
-    .col-s-5{width: 41.66%;}
-    .col-s-6{width: 50.00%;}
-    .col-s-7{width: 58.33%;}    
-    .col-s-8{width: 66.66%;}
-    .col-s-9{width: 75.00%;}
-    .col-s-10{width:83.33%;}
-    .col-s-11{width:91.66%;}
-    .col-s-12{width:100.0%;}
+    /* For Smartphones */
+    .col--s1{width:  8.33%;}
+    .col--s2{width: 16.66%;}
+    .col--s3{width: 25.00%;}
+    .col--s4{width: 33.33%;}
+    .col--s5{width: 41.66%;}
+    .col--s6{width: 50.00%;}
+    .col--s7{width: 58.33%;}    
+    .col--s8{width: 66.66%;}
+    .col--s9{width: 75.00%;}
+    .col--s10{width:83.33%;}
+    .col--s11{width:91.66%;}
+    .col--s12{width:100.0%;}
 }
 
 @media only screen and (min-width: 768px) {
-    /* For Desktop */
-    .col-1{width:  8.33%;}
-    .col-2{width: 16.66%;}
-    .col-3{width: 25.00%;}
-    .col-4{width: 33.33%;}
-    .col-5{width: 41.66%;}
-    .col-6{width: 50.00%;}
-    .col-7{width: 58.33%;}    
-    .col-8{width: 66.66%;}
-    .col-9{width: 75.00%;}
-    .col-10{width:83.33%;}
-    .col-11{width:91.66%;}
-    .col-12{width:100.0%;}
+    /* For Tablets */
+    .col--t1{width:  8.33%;}
+    .col--t2{width: 16.66%;}
+    .col--t3{width: 25.00%;}
+    .col--t4{width: 33.33%;}
+    .col--t5{width: 41.66%;}
+    .col--t6{width: 50.00%;}
+    .col--t7{width: 58.33%;}    
+    .col--t8{width: 66.66%;}
+    .col--t9{width: 75.00%;}
+    .col--t10{width:83.33%;}
+    .col--t11{width:91.66%;}
+    .col--t12{width:100.0%;}
 }
+
+@media only screen and (min-width: 1024px) {
+    /* For Desktops */
+    .col--d1{width:  8.33%;}
+    .col--d2{width: 16.66%;}
+    .col--d3{width: 25.00%;}
+    .col--d4{width: 33.33%;}
+    .col--d5{width: 41.66%;}
+    .col--d6{width: 50.00%;}
+    .col--d7{width: 58.33%;}
+    .col--d8{width: 66.66%;}
+    .col--d9{width: 75.00%;}
+    .col--d10{width:83.33%;}
+    .col--d11{width:91.66%;}
+    .col--d12{width:100.0%;}
+}
+
+@media only screen and (min-width: 1024px) {
+    .widescreen {
+        /* Formato de página até 80% de largura */
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {.hidden--s{display: none;}} /* Hidden Max 480px */
+@media only screen and (min-width: 768px) {.hidden--t{display: none;}} /* Hidden Max 768px */
+@media only screen and (min-width:1024px) {.hidden--d{display: none;}} /* Hidden Max 1024px */
+
+@media only screen and (max-width:600px) {body{font-size: 15px;}}
+@media only screen and (min-width:601px) {body{font-size: 20px;}}
+
+img {width:100%; height: auto;}
+video {width:100%; height:auto}
