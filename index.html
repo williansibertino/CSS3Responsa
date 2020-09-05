@@ -5,28 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS3Responsa Grid Layout</title>
     <link rel="stylesheet"  href="responsa.css">
+
+    <style>body{background-color: #fafafa;}  </style>
 </head>
 <body>
-    <h1 class="col-12">Framework de CSS3 Básico de Grid Layout</h1>
+    <h1 class="res--12">Framework de CSS3 Básico de Grid Layout</h1>
     <div class="row">
-        <div class="col--s6 col--t3">1</div>
-        <div class="col--s6 col--t3">2</div>
-        <div class="col--s6 col--t3">3</div>
-        <div class="col--s6 col--t3">4</div>
+        <div class="res--s6 res--t3">1</div>
+        <div class="res--s6 res--t3">2</div>
+        <div class="res--s6 res--t3">3</div>
+        <div class="res--s6 res--t3">4</div>
     </div>
     <div class="row">
-        <div class="col--s6 col--t8"> main </div>
-        <div class="col--s6 col--t4"> aside </div>
+        <div class="res--s6 res--t8"> main </div>
+        <div class="res--s6 res--t4"> aside </div>
     </div>
-    <main class="widescreen">
+    <main class="container">
         <div class="row">
-            <div class="col--s7 col--t7 col--d8">
-                <div class="col--s6">1.1</div>
-                <div class="col--s6">1.2</div>
+            <div class="res--s7 res--t7 res--d8">
+                <div class="res--s6">1.1</div>
+                <div class="res--s6">1.2</div>
             </div>
-            <div class="col--s5 col--t5 col--d4">
+            <div class="res--s5 res--t5 res--d4">
                 <div class="row">
-                <div class="col--s12">2</div></div>
+                    <div class="res--s12">2</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="container--80">
+        <div class="row">
+            <div class="res--s7 res--t7 res--d8">
+                <div class="res--s6">1.1</div>
+                <div class="res--s6">1.2</div>
+            </div>
+            <div class="res--s5 res--t5 res--d4">
+                <div class="row">
+                    <div class="res--s12">2</div>
+                </div>
             </div>
         </div>
     </main>

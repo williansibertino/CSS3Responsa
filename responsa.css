@@ -7,15 +7,12 @@
     -webkit-box-sizing: border-box;
 }
 
-
-
-[class*="col-"] {
+[class*="res--"] {
     /* For Devices 320px */
     width: 100%;
     float: left;
     padding: 10px;
     border: 1px solid #d1d1d1;
-    background-color: #fafafa;
 }
 
 .row::after {
@@ -25,59 +22,82 @@
     display: table;
 }
 
+@media only screen and (max-width: 479px) {
+    .res--1{width:  8.33%;}
+    .res--2{width: 16.66%;}
+    .res--3{width: 25.00%;}
+    .res--4{width: 33.33%;}
+    .res--5{width: 41.66%;}
+    .res--6{width: 50.00%;}
+    .res--7{width: 58.33%;}    
+    .res--8{width: 66.66%;}
+    .res--9{width: 75.00%;}
+    .res--10{width:83.33%;}
+    .res--11{width:91.66%;}
+    .res--12{width:100.0%;}
+}
 @media only screen and (min-width: 480px) {
     /* For Smartphones */
-    .col--s1{width:  8.33%;}
-    .col--s2{width: 16.66%;}
-    .col--s3{width: 25.00%;}
-    .col--s4{width: 33.33%;}
-    .col--s5{width: 41.66%;}
-    .col--s6{width: 50.00%;}
-    .col--s7{width: 58.33%;}    
-    .col--s8{width: 66.66%;}
-    .col--s9{width: 75.00%;}
-    .col--s10{width:83.33%;}
-    .col--s11{width:91.66%;}
-    .col--s12{width:100.0%;}
+    .res--s1{width:  8.33%;}
+    .res--s2{width: 16.66%;}
+    .res--s3{width: 25.00%;}
+    .res--s4{width: 33.33%;}
+    .res--s5{width: 41.66%;}
+    .res--s6{width: 50.00%;}
+    .res--s7{width: 58.33%;}    
+    .res--s8{width: 66.66%;}
+    .res--s9{width: 75.00%;}
+    .res--s10{width:83.33%;}
+    .res--s11{width:91.66%;}
+    .res--s12{width:100.0%;}
 }
-
 @media only screen and (min-width: 768px) {
     /* For Tablets */
-    .col--t1{width:  8.33%;}
-    .col--t2{width: 16.66%;}
-    .col--t3{width: 25.00%;}
-    .col--t4{width: 33.33%;}
-    .col--t5{width: 41.66%;}
-    .col--t6{width: 50.00%;}
-    .col--t7{width: 58.33%;}    
-    .col--t8{width: 66.66%;}
-    .col--t9{width: 75.00%;}
-    .col--t10{width:83.33%;}
-    .col--t11{width:91.66%;}
-    .col--t12{width:100.0%;}
+    .res--t1{width:  8.33%;}
+    .res--t2{width: 16.66%;}
+    .res--t3{width: 25.00%;}
+    .res--t4{width: 33.33%;}
+    .res--t5{width: 41.66%;}
+    .res--t6{width: 50.00%;}
+    .res--t7{width: 58.33%;}    
+    .res--t8{width: 66.66%;}
+    .res--t9{width: 75.00%;}
+    .res--t10{width:83.33%;}
+    .res--t11{width:91.66%;}
+    .res--t12{width:100.0%;}
 }
-
 @media only screen and (min-width: 1024px) {
     /* For Desktops */
-    .col--d1{width:  8.33%;}
-    .col--d2{width: 16.66%;}
-    .col--d3{width: 25.00%;}
-    .col--d4{width: 33.33%;}
-    .col--d5{width: 41.66%;}
-    .col--d6{width: 50.00%;}
-    .col--d7{width: 58.33%;}
-    .col--d8{width: 66.66%;}
-    .col--d9{width: 75.00%;}
-    .col--d10{width:83.33%;}
-    .col--d11{width:91.66%;}
-    .col--d12{width:100.0%;}
+    .res--d1{width:  8.33%;}
+    .res--d2{width: 16.66%;}
+    .res--d3{width: 25.00%;}
+    .res--d4{width: 33.33%;}
+    .res--d5{width: 41.66%;}
+    .res--d6{width: 50.00%;}
+    .res--d7{width: 58.33%;}
+    .res--d8{width: 66.66%;}
+    .res--d9{width: 75.00%;}
+    .res--d10{width:83.33%;}
+    .res--d11{width:91.66%;}
+    .res--d12{width:100.0%;}
 }
 
-@media only screen and (min-width: 1024px) {
-    .widescreen {
-        /* Formato de página até 80% de largura */
-        max-width: 80%;
-        margin: 0 auto;
+.container--80 {
+    max-width: 80%;
+    margin: auto;
+}
+.container {
+    /* Formato de página até 80% de largura */
+    max-width: 90%;
+    margin: auto;
+}
+.container--full {
+    width: 100%;
+    margin: auto;
+}
+@media only screen and (max-width:1024px) {
+    .container--80 {
+        max-width: 90%;
     }
 }
 
@@ -85,8 +105,13 @@
 @media only screen and (min-width: 768px) {.hidden--t{display: none;}} /* Hidden Max 768px */
 @media only screen and (min-width:1024px) {.hidden--d{display: none;}} /* Hidden Max 1024px */
 
-@media only screen and (max-width:600px) {body{font-size: 15px;}}
-@media only screen and (min-width:601px) {body{font-size: 20px;}}
+@media only screen and (max-width:600px) {p{font-size: 13px;}}
+@media only screen and (min-width:601px) {p{font-size: 18px;}}
 
 img {width:100%; height: auto;}
-video {width:100%; height:auto}
+video {width:100%;height:auto;}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
