@@ -82,11 +82,11 @@
     .res--d12{width:100.0%;}
 }
 
-.container--80 {
+.container--p {
     max-width: 80%;
     margin: auto;
 }
-.container {
+.container--m {
     /* Formato de página até 80% de largura */
     max-width: 90%;
     margin: auto;
