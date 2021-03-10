@@ -1,9 +1,23 @@
-# CSS3Responsa framework
-
-## **Framework básico de CSS3 grid layout responsivo.**
----
-### Classes Responsivas para dispositivos ABAIXO DE 479px
-```
+* {
+    /* Propriedade definida como border-box. Isso garante que o preenchimento e a borda sejam incluídos na largura e altura total dos elementos. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+[class*="res--"] {
+    /* For Devices 320px */
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+.row::after {
+    /* Limpeza de fluxo em que os elementos não serão colocados como se as colunas não existissem */
+    content: "";
+    clear: both;
+    display: table;
+}
 @media only screen and (max-width: 479px) {
     .res--m1{width:  8.33%;}
     .res--m2{width: 16.66%;}
@@ -18,10 +32,6 @@
     .res--m11{width:91.66%;}
     .res--m12{width:100.0%;}
 }
-```
----
-### Classes Responsivas para dispositivos ACIMA DE 480px
-```
 @media only screen and (min-width: 480px) {
     /* For Smartphones */
     .res--s1{width:  8.33%;}
@@ -37,10 +47,6 @@
     .res--s11{width:91.66%;}
     .res--s12{width:100.0%;}
 }
-```
----
-### Classes Responsivas para dispositivos ACIMA DE 768px
-```
 @media only screen and (min-width: 768px) {
     /* For Tablets */
     .res--t1{width:  8.33%;}
@@ -56,10 +62,6 @@
     .res--t11{width:91.66%;}
     .res--t12{width:100.0%;}
 }
-```
----
-### Classes Responsivas para dispositivos ACIMA DE 1024px
-```
 @media only screen and (min-width: 1024px) {
     /* For Desktops */
     .res--d1{width:  8.33%;}
@@ -75,12 +77,34 @@
     .res--d11{width:91.66%;}
     .res--d12{width:100.0%;}
 }
-```
-### Container Classes
-`.container--small` container com 80% de largura da width da página e margin auto. <br>
-`.container--medium` container com 90% de largura da width da página e margin auto. <br>
-`.container--full` container com 100% da largura da width da página e margin auto.
-### Hidden Classes
-`.hidden--m` esconder elementos abaixo de 480px <br>
-`.hidden--t` esconder elementos acima de 768px <br> 
-`.hidden--d` esconder elementos acima de 1024px
+
+.containner--small {
+    max-width: 80%;
+    margin: auto;
+}
+.containner--medium {
+    /* Formato de página até 80% de largura */
+    max-width: 90%;
+    margin: auto;
+}
+.containner--full {
+    width: 100%;
+    margin: auto;
+}
+@media only screen and (max-width:1024px) {
+    .containner--small {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {.hidden--s{display: none;}} /* Hidden Max 480px */
+@media only screen and (min-width: 768px) {.hidden--t{display: none;}} /* Hidden Max 768px */
+@media only screen and (min-width:1024px) {.hidden--d{display: none;}} /* Hidden Max 1024px */
+
+img {width:100%; height: auto;}
+video {width:100%;height:auto;}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
