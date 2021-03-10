@@ -77,9 +77,9 @@
 }
 ```
 ### Container Classes
-`.container--small` container com 80% de largura da width da página e margin auto. <br>
-`.container--medium` container com 90% de largura da width da página e margin auto. <br>
-`.container--full` container com 100% da largura da width da página e margin auto.
+`.containner--small` container com 80% de largura da width da página e margin auto. <br>
+`.containner--medium` container com 90% de largura da width da página e margin auto. <br>
+`.containner--full` container com 100% da largura da width da página e margin auto.
 ### Hidden Classes
 `.hidden--m` esconder elementos abaixo de 480px <br>
 `.hidden--t` esconder elementos acima de 768px <br> 
