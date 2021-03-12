@@ -4,21 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS3Responsa Grid Layout</title>
-    <link rel="stylesheet"  href="responsa-grid.min.css">
-
-    <style>body{background-color: #fafafa;}  </style>
+    
+    <link rel="stylesheet"  href="responsa-grid.css">
+    <style>
+        body{background-color: #fafafa;}  
+        h1 {color: rgb(202, 30, 30);}
+        [class*="xs--"],
+        [class*="sm--"],
+        [class*="md--"],
+        [class*="lg--"] {
+            border: 1px solid rgba(0, 0, 0, 0.158);
+            background-color: rgb(189, 184, 184);
+}
+    
+    
+    
+    </style>
 </head>
 <body>
-    <h1 class="res--12">Framework de CSS3 Básico de Grid Layout</h1>
+    <h1>Framework de CSS3 Básico de Grid Layout</h1>
     <div class="row">
-        <div class="res--s6 res--t3">1</div>
-        <div class="res--s6 res--t3">2</div>
-        <div class="res--s6 res--t3">3</div>
-        <div class="res--s6 res--t3">4</div>
+        <div class="md--4 lg--4">1</div>
+        <div class="md--4 lg--3">2</div>
+        <div class="md--4 lg--2">3</div>
+        <div class="md--4 lg--3">4</div>
     </div>
     <div class="row">
-        <div class="res--s6 res--t8"> main </div>
-        <div class="res--s6 res--t4"> aside </div>
+        <div class="md--5 lg--5 off-lg-1 off-md-1">Primeiro</div>
+        <div class="md--4 lg--4 off-lg-1 off-md-1">Segundo</div>
+    </div>
+    <div class="row">
+        <div class="lg--7 off-lg-1"> main </div>
+        <div class="lg--3 off-lg-1"> aside </div>
     </div>
     <main class="containner--full">
         <div class="row">
@@ -44,12 +61,6 @@
                     <div class="res--s12">2</div>
                 </div>
             </div>
-        </div>
-    </main>
-
-    <main class="containner--small">
-        <div class="row">
-            <h1>boteco</h1>
         </div>
     </main>
 </body>
