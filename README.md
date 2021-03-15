@@ -32,7 +32,6 @@ As classe de colunas vazias são iniciadas com o (off-) seguido da abreviatura d
     .off-xs-9{margin-left: 75.00%;}
     .off-xs-10{margin-left:83.33%;}
     .off-xs-11{margin-left:91.66%;}
-    .off-xs-12{margin-left:100.0%;}
 }
 ```
 <br>
@@ -65,7 +64,6 @@ As classe de colunas vazias são iniciadas com o (off-) seguido da abreviatura d
     .off-sm-9{margin-left: 75.00%;}
     .off-sm-10{margin-left:83.33%;}
     .off-sm-11{margin-left:91.66%;}
-    .off-sm-12{margin-left:100.0%;}
 }
 ```
 <br>
@@ -98,7 +96,6 @@ As classe de colunas vazias são iniciadas com o (off-) seguido da abreviatura d
     .off-md-9{margin-left: 75.00%;}
     .off-md-10{margin-left:83.33%;}
     .off-md-11{margin-left:91.66%;}
-    .off-md-12{margin-left:100.0%;}
 }
 ```
 <br>
@@ -131,7 +128,6 @@ As classe de colunas vazias são iniciadas com o (off-) seguido da abreviatura d
     .off-lg-9{margin-left: 75.00%;}
     .off-lg-10{margin-left:83.33%;}
     .off-lg-11{margin-left:91.66%;}
-    .off-lg-12{margin-left:100.0%;}
 }
 ```
 ## Container Classes

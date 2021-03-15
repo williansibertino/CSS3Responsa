@@ -46,7 +46,6 @@
     .off-xs-9{margin-left: 75.00%;}
     .off-xs-10{margin-left:83.33%;}
     .off-xs-11{margin-left:91.66%;}
-    .off-xs-12{margin-left:100.0%;}
 }
 @media only screen and (min-width: 480px) {
     /* Device Small */
@@ -74,9 +73,8 @@
     .off-sm-9{margin-left: 75.00%;}
     .off-sm-10{margin-left:83.33%;}
     .off-sm-11{margin-left:91.66%;}
-    .off-sm-12{margin-left:100.0%;}
 }
-@media only screen and (min-width: 768px) and (max-width:1023px){
+@media only screen and (min-width: 768px){
     /* Medium */
     .md--1{width:  8.33%;}
     .md--2{width: 16.66%;}
@@ -102,9 +100,8 @@
     .off-md-9{margin-left: 75.00%;}
     .off-md-10{margin-left:83.33%;}
     .off-md-11{margin-left:91.66%;}
-    .off-md-12{margin-left:100.0%;}
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px){
     /* Device Large */
     .lg--1{width:  8.33%;}
     .lg--2{width: 16.66%;}
@@ -130,7 +127,6 @@
     .off-lg-9{margin-left: 75.00%;}
     .off-lg-10{margin-left:83.33%;}
     .off-lg-11{margin-left:91.66%;}
-    .off-lg-12{margin-left:100.0%;}
 }
 
 .container--small {
@@ -157,8 +153,8 @@
 @media only screen and (min-width: 768px) {.md--hidden {display: none;}} 
 @media only screen and (min-width:1024px) {.lg--hidden {display: none;}} 
 
-img {width:100%; height: auto;}
-video {width:100%;height:auto;}
+.img--fluid {width:100%; height: auto;}
+.video--fluid {width:100%;height:auto;}
 
 h1, h2, h3, h4, h5, h6, p {
     font-family: Arial, Helvetica, sans-serif;
